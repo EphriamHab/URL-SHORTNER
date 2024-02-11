@@ -24,7 +24,8 @@ app.get('/:shortId', async(req,res)=>{
         timestamp: Date.now()
     }
  },
-}
+},
+{ new: true }
 );
 res.redirect(entry.redirectURL)
 })
